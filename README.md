@@ -1,7 +1,11 @@
 # MobilePhoneECommerceWebsite
  MobilePhoneECommerceWebsite Laravel
 Link website: http://quanhoangmobileshop.infinityfreeapp.com/
+Link admin: http://quanhoangmobileshop.infinityfreeapp.com/admin
 
+login-admin:
+    user: admin12@gmail.com 
+    password: 123456
 ### Website Features
 **User**
 - View product details
