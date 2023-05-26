@@ -10,12 +10,12 @@
         display: none;
     }
 
-    .content{
+    .content {
         padding: 10px 0 110px 0;
     }
 </style>
 
-<div class="cart_section">
+<div class="cart_section cart">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
@@ -92,6 +92,8 @@
                 </div>
             </div>
         </div>
+
+        <!--  -->
         <div class="cart_buttons">
             <a href="{{ URL::to('/trang-chu') }}">
                 <button type="button" class="button cart_button_clear" style="float: left">Quay lại Trang Chủ</button>
@@ -101,27 +103,125 @@
             $customer_id = Session::get('customer_id');
             if ($customer_id != null) {
             ?>
-                <a href="{{ URL::to('/checkout') }}" class="button cart_button_checkout" id=""style="float: right">
+                <a href="{{ URL::to('/checkout') }}" class="button cart_button_checkout" id="" style="float: right">
                     Thanh toán
                 </a>
             <?php
             } else {
             ?>
-                <a href="{{ URL::to('/login-checkout') }}" class="button cart_button_checkout" id=""style="float: right">
+                <a href="{{ URL::to('/login-checkout') }}" class="button cart_button_checkout" id="" style="float: right">
                     Thanh toán
                 </a>
             <?php
             }
             ?>
-
-            <!-- <a href="{{ URL::to('/checkout') }}">
-                <button type="button" class="button cart_button_checkout" style="float: right">Thanh Toán</button>
-            </a> -->
         </div>
-        
-
     </div>
 </div>
+
+<div class="cart_section cart_mobile">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="cart_container">
+                <div class="cart_title" style="font-size: 1.7rem;font-weight: 500;">Giỏ hàng</div>
+                <!-- <small> (1 item in your cart) </small> -->
+
+                <div class="cart_items">
+                    <ul class="cart_list">
+                        <?php
+                        $content = Cart::content();
+                        // echo '<pre>';
+                        // print_r($content);
+                        // echo '</pre>';
+                        ?>
+                        @foreach($content as $v_content)
+                        <li class="cart_item clearfix">
+                        <div class="cart_item_total cart_info_col" style="float: left">
+                                <!-- <div class="cart_item_title" style="font-size: 12px;margin-top: 0px">Thao tác</div> -->
+                                <div class="cart_item_text" style="font-size: 12px;margin-top: 20px">
+                                    <a onclick="return confirm('Bạn có chắc muốn xóa sản phẩm này không?')" href="{{URL::to('/delete-to-cart/'.$v_content->rowId)}}" class="delete" title="Delete" data-toggle="tooltip"><i class="fa-solid fa-x fa-sm" style="color: red;"></i></a>
+                                </div>
+                            </div>
+                            <div class="cart_item_image" style="width: 80px;height: 133px;;"><img src="{{URL::to('public/uploads/product/'.$v_content->options->image)}}" style="width: 100%" alt=""></div>
+                            <div class="cart_item_info d-flex flex-md-row flex-column justify-content-between" style="width: calc(100% - 133px);float: left;padding-top: 0px;">
+                                <div class="cart_item_name cart_info_col">
+                                    <!-- <div class="cart_item_title">Tên sản phẩm</div> -->
+                                    <div class="cart_item_text" style="font-size: 12px;margin-top: 0px;width: 150px; font-weight: 600">{{$v_content->name}}</div>
+                                </div>
+
+                                <div class="cart_item_price cart_info_col" style="width: 150px;">
+                                    <!-- <div class="cart_item_title">Số tiền</div> -->
+                                    <div class="cart_item_text" style="font-size: 12px;margin-top: 0px;width: 92px; color: red">{{number_format($v_content->price).' '.'VNĐ'}}</div>
+                                </div>
+
+                                <div class="cart_item_quantity cart_info_col" style="width: 150px; margin-left: 5px">
+                                    <!-- <div class="cart_item_title" style="font-size: 12px;margin-top: 0px">Số lượng</div> -->
+                                    <form action="{{URL::to('/update-cart-quantity')}}" method="post">
+                                        {{csrf_field(URL::to('/update-cart-quantity'))}}
+                                        <div class="cart_item_text" style="font-size: 12px;margin-top: 0px">
+                                            <input type="text" name="cart_quantity" value="{{$v_content->qty}}" style="width: 50px">
+                                            <input type="hidden" value="{{$v_content->rowId}}" name="rowId_cart">
+                                            <input type="submit" value="Cập nhật" name="update_qty" class="">
+                                        </div>
+                                    </form>
+                                </div>
+
+
+
+                            </div>
+                        </li>
+                        @endforeach
+                    </ul>
+                </div>
+
+                <div class="order_total" style="width: 100%;
+                height: 60px;
+                margin-top: 30px;
+                border: solid 1px #e8e8e8;
+                box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+                padding-right: 35px;
+                padding-left: 15px;
+                background-color: #fff;">
+                    <div class="order_total_content text-md-right" style="width: 140%">
+                        <div class="order_total_title" style="font-size: 14px;">Tổng hóa đơn:</div>
+                        <div class="order_total_amount" style="font-size: 14px; margin-left: 0px;">
+                            {{Cart::subtotal().' '.'VNĐ'}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--  -->
+        <div class="cart_buttons">
+            <a href="{{ URL::to('/trang-chu') }}">
+                <button type="button" class="button cart_button_clear" style="float: left;">
+                    <i class="fa-solid fa-arrow-left"></i></button>
+            </a>
+
+            <?php
+            $customer_id = Session::get('customer_id');
+            if ($customer_id != null) {
+            ?>
+                <a href="{{ URL::to('/checkout') }}" class="button cart_button_checkout" id="" style="float: right; font-size: 12px;  background-color: #f04949">
+                    Thanh toán
+                </a>
+            <?php
+            } else {
+            ?>
+                <a href="{{ URL::to('/login-checkout') }}" class="button cart_button_checkout" id="" style="float: right; font-size: 12px;  background-color: #f04949">
+                    Thanh toán
+                </a>
+            <?php
+            }
+            ?>
+        </div>
+    </div>
+</div>
+
+
 <style>
     * {
         margin: 0;
@@ -204,7 +304,7 @@
     }
 
     .cart_item_image img {
-        max-width: 100%
+        max-width: 150%
     }
 
     .cart_item_info {
