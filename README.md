@@ -56,8 +56,6 @@ Run on Xampp
     
 <img width="960" alt="customer" src="https://github.com/BlackIcon058/MobilePhoneECommerceWebsite/assets/107245089/69267be2-9263-4e3e-974c-9caae41a2511">
     
-<img width="960" alt="user" src="https://github.com/BlackIcon058/MobilePhoneECommerceWebsite/assets/107245089/c5741292-e96e-4fac-a37e-86a17ce5f098">
-    
 <img width="960" alt="order" src="https://github.com/BlackIcon058/MobilePhoneECommerceWebsite/assets/107245089/556c875c-31dc-4823-a185-6ff11b04f135">
     
 <img width="960" alt="details order" src="https://github.com/BlackIcon058/MobilePhoneECommerceWebsite/assets/107245089/b4064994-c379-4d46-8b39-7652f4f204a7">
