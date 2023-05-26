@@ -71,6 +71,365 @@
             /* chiều rộng của mỗi phần tử */
             max-width: 280px;
         }
+
+        .login_mobile {
+            display: none;
+        }
+
+        .customer_mobile {
+            display: none;
+        }
+
+        .view_mobile {
+            display: none;
+        }
+
+        .logout_mobile {
+            display: none;
+        }
+
+        .header_cart_mobile {
+            display: none;
+        }
+
+        .search_mobile {
+            display: none;
+        }
+
+        .cate_mobile {
+            display: none;
+        }
+
+        .search_mobile {
+            display: none;
+        }
+
+        .cart_mobile {
+            display: none;
+        }
+
+        .signup_mobile {
+            display: none;
+        }
+
+        .img_login_mobile {
+            display: none;
+        }
+
+        .signup_mobile {
+            display: none;
+        }
+
+        .details_on_mobile{
+            display: none;
+        }
+
+        .payment_on_mobile{
+            display: none;
+        }
+        
+        .handcash_mobile{
+            display: none;
+        }
+
+        .order_on_mobile{
+            display: none;
+        }
+
+        .vieworder_customer_mobile{
+            display: none;
+        }
+
+        .search_avanced_mobile{
+            display: none;
+        }
+
+        .tech_news_mobile{
+            display: none;
+        }
+
+        .news_mobile{
+            display: none;
+        }
+        /* mobile < 740 */
+        @media only screen and (max-width: 740px) {
+            /* .header_navbar-top{
+                display: none;
+            } */
+
+            .news{
+                display: none;
+            }
+            .news_mobile{
+                display: block;
+            }
+            .tech_news{
+                display: none;
+            }
+
+            .tech_news_mobile{
+                display: block;
+            }
+
+            .vieworder_customer{
+                display: none;
+            }
+            
+            .vieworder_customer_mobile{
+                display: block;
+            }
+
+            .order{
+                display: none;
+            }
+
+            .order_on_mobile{
+                display: block;
+                margin-top: -40px;
+                margin-left: -35px;
+            }
+
+            .handcash{
+                display: none;
+            }
+
+            .handcash_mobile{
+                display: block;
+            }
+            
+            .payment{
+                display: none;
+            }
+
+            .payment_on_mobile{
+                display: block;
+            }
+
+            .details{
+                display: none;
+            }
+
+            .details_on_mobile{
+                display: block;
+                margin-top: 90px;
+            }
+            .search {
+                display: none;
+            }
+
+            .search_avanced {
+                display: none;
+            }
+
+            .search_mobile {
+                display: block;
+            }
+
+            .search_avanced_mobile {
+                display: block;
+            }
+
+            .form-control {
+                font-size: 1rem;
+                padding: 0.2rem 0.75rem;
+                width: 110%;
+                height: calc(1.5em + 0.75rem + 2px);
+                font-weight: 400;
+                line-height: 1.5;
+                color: rgb(73, 80, 87);
+                background-color: rgb(255, 255, 255);
+                /* background-clip: padding-box; */
+                /* border-width: 1px; */
+                border-style: solid;
+                border-color: rgb(206, 212, 218);
+                border-image: initial;
+                border-radius: 0.25rem;
+                transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+                margin-left: -10px;
+
+            }
+
+            .cate-group {
+                margin-right: 15px;
+            }
+
+            .btn {
+                font-size: 1.2rem;
+                min-width: 69px;
+                margin-left: 175px;
+            }
+
+            .content_group-title h1 {
+                font-size: 1.5rem;
+            }
+
+            .bartop_mobile {
+                display: none;
+            }
+
+            .content {
+                margin-top: 60px;
+            }
+
+            .content_group-title{
+                padding-top: 10px;
+            }
+
+            .search {
+                display: none;
+            }
+
+            .search_mobile {
+                display: block;
+                width: auto;
+            }
+
+            .cart {
+                display: none;
+            }
+
+            .header_cart_mobile {
+                display: block;
+                margin-left: -5px;
+            }
+
+            .header_cart {
+                background-color: #da1a1a;
+            }
+
+            .login_mobile {
+                display: block;
+                margin-left: 10px;
+            }
+
+            #login_logout {
+                display: none;
+            }
+
+            .checkout {
+                display: none;
+            }
+
+            .header_cart-history {
+                border-left: none;
+                border-right: none;
+            }
+
+            .header_cart-history i {
+                font-size: 16px;
+                margin-left: -8px;
+            }
+
+            .view_mobile {
+                display: block;
+                margin-left: -12px;
+
+            }
+
+            .logout_mobile {
+                display: block;
+                margin-right: -12px;
+
+            }
+
+            #customer {
+                display: none;
+            }
+
+            .customer_mobile {
+                display: block;
+
+            }
+
+            .header_search-logo img {
+                width: 20px;
+                height: 20px;
+            }
+
+            .header_navbar_accessory {
+                margin-left: 120px;
+                max-width: 180px;
+                margin-top: 50px;
+            }
+
+            .header_accessory_link {
+                font-size: 13px;
+            }
+
+            .cate_mobile {
+                display: block;
+            }
+
+            .header_navbar_link {
+                font-size: 0.8rem;
+            }
+
+            .header_navbar_item {
+                height: 50px;
+            }
+
+            /* cart */
+
+            .cart {
+                display: none;
+            }
+
+            .cart_mobile {
+                display: block;
+            }
+
+            .card-title {
+                font-size: 1.5rem;
+            }
+
+            .my-login-page .form-group label {
+                width: 100%;
+                font-size: 1.3rem;
+            }
+
+            .signup {
+                display: none;
+            }
+
+            .signup_mobile {
+                display: block;
+            }
+
+            .img_login {
+                display: none;
+            }
+
+            .img_login_mobile {
+                display: none;
+            }
+
+            .brand {
+                display: none;
+            }
+
+            .fat {
+                margin-top: 30px;
+            }
+
+            .signup {
+                display: none;
+            }
+
+            .signup_mobile {
+                display: block;
+            }
+
+            .mb-3 {
+                font-size: 1.6rem;
+            }
+
+        }
+
+        /* tablet >= 740 <= 1024 */
+        @media only screen and (min-width: 740px) and (max-width: 1023px) {}
+
+        /* pc >= 1024 */
+        @media only screen and (min-width: 1024px) {}
     </style>
 </head>
 
@@ -87,40 +446,23 @@
                                 <img src="{{asset('public/frontend/assets/images/banner_top.png')}}" width="100%" alt="Photos">
                             </div>
                         </div>
-                        <!-- <div class="carousel-item header_slide_2">
-                            <div class="grid wide">
-                                <img src="{{asset('public/frontend/assets/images/.png')}}" width="100%" alt="Photos">
-                            </div>
-                        </div> -->
                     </div>
-                    <!-- <div class="grid wide">
-                        <a class="carousel-control-prev header_slide_control_1" href="#myCarousel" data-slide="prev">
-                            <i class="fas fa-chevron-left"></i>
-                        </a>
-                        <a class="carousel-control-next header_slide_control_2" href="#myCarousel" data-slide="next">
-                            <i class="fas fa-chevron-right"></i>
-                        </a>
-                    </div> -->
                 </div>
             </div>
             <!-- end--navbar-top-- -->
             <!-- start-header-with-search--------->
             <div class="header_with_search">
                 <div class="grid wide">
-
-
-
                     <div class="container">
                         <div class="row">
-
-                            <div class=" header_with_search-main">
+                            <div class="header_with_search-main">
                                 <div class="header_search_left">
                                     <a href="{{ URL::to('/trang-chu') }}" class="header_search-logo">
                                         <img class="hidden_on_mobile" src="{{asset('public/frontend/assets/images/logo.png')}}" alt="logo" width="100%">
-                                        <img class="show_on_mobile logo_on_mobile" src="{{asset('public/frontend/assets/images/logo_mobile.png')}}" alt="logo">
+                                        <img class="show_on_mobile logo_on_mobile" src="{{asset('public/frontend/assets/images/home_mobile.png')}}" alt="logo">
                                     </a>
 
-                                    <div class="col-md-8">
+                                    <div class="col-md-7 search">
                                         <form action="{{ URL::to('/tim-kiem') }}" class="header_search" method="post">
                                             {{csrf_field()}}
                                             <input class="show_on_mobile" onclick="search_on_mobile()" type="text" placeholder="Tìm kiếm...">
@@ -129,7 +471,18 @@
                                         </form>
                                     </div>
 
-                                    <div class="col-md-2" style="margin-left: -15px;">
+                                    <!-- search on mobile -->
+                                    <div class="col-md-6 search_mobile" style="width: 200px">
+                                        <form action="{{ URL::to('/tim-kiem') }}" class="header_search" method="post"  style="width: 170px;">
+                                            {{csrf_field()}}
+                                            <input class="show_on_mobile" onclick="search_on_mobile()" type="text" placeholder="Tìm kiếm...">
+                                            <input class="hidden_on_mobile" name="keywords_submit" type="text" placeholder="Tìm kiếm...">
+                                            <button type="submit" name="search_item"><i class="fas fa-search"></i></button>
+                                        </form>
+                                    </div>
+
+
+                                    <div class="col-md-2 cart" style="margin-left: -15px;">
                                         <a href="{{ URL::to('/show-cart') }}" class="header_cart" id="header_cart">
                                             <span class="number"><i class="fa-solid fa-cart-shopping"></i></span>
                                             <span class="hidden_on_mobile">Giỏ hàng</span>
@@ -137,7 +490,31 @@
                                         </a>
                                     </div>
 
-                                    <div class="col-md-2" style="margin-left: -50px;">
+                                    <!-- cart mobile -->
+                                    <div class="header_cart_mobile" style="margin-left: -15px;">
+                                        <a href="{{ URL::to('/show-cart') }}" class="header_cart" id="header_cart">
+                                            <span class="number"><i class="fa-solid fa-cart-shopping"></i></span>
+                                            <span class="hidden_on_mobile">Giỏ hàng</span>
+                                            <div class="header_cart-overlay"></div>
+                                        </a>
+                                    </div>
+                                    <!-- view mobile -->
+                                    <div class="view_mobile">
+                                        <?php
+                                        $customer_name = Session::get('customer_name');
+                                        if ($customer_name != null) {
+                                        ?>
+                                            <a href="{{URL::to('/vieworder-customer/'.$customer_name)}}" class="header_cart" id="header_cart">
+                                                <span class="number"><i class="fa-sharp fa-solid fa-file-invoice"></i></span>
+                                                <div class="header_cart-overlay"></div>
+                                            </a>
+                                        <?php
+                                        }
+                                        ?>
+                                    </div>
+
+
+                                    <div class="col-md-2 checkout" style="margin-left: -50px;">
                                         <?php
                                         $customer_id = Session::get('customer_id');
                                         if ($customer_id != null) {
@@ -156,7 +533,7 @@
                                         ?>
                                     </div>
 
-                                    <div class="col-md-2 col-sm-12" id="login_logout" style="margin-left: -100px;">
+                                    <div class="col-md-2" id="login_logout" style="margin-left: -100px;">
                                         <?php
                                         $customer_id = Session::get('customer_id');
                                         if ($customer_id == null) {
@@ -169,6 +546,21 @@
                                         ?>
                                     </div>
 
+                                    <!-- dang nhap on mobile -->
+                                    <div class="login_mobile">
+                                        <?php
+                                        $customer_id = Session::get('customer_id');
+                                        if ($customer_id == null) {
+                                        ?>
+                                            <a href="{{ URL::to('/login-checkout') }}" class="header_cart-history" id="">
+                                                Đăng nhập
+                                            </a>
+                                        <?php
+                                        }
+                                        ?>
+                                    </div>
+
+                                    <!--  -->
                                     <div class="col-md-2" id="customer" style="margin-left: -175px; width: 770px;">
 
                                         <li class="header_navbar_acctive" style="list-style-type: none;">
@@ -178,39 +570,87 @@
                                                 if ($customer_name != null) {
                                                 ?>
                                                     <a href="" class="header_cart-history" id="customer_name">
-                                                    <i class="fa-solid fa-circle-user fa-xl" style="margin-left: 5px;"></i>
+                                                        <i class="fa-solid fa-circle-user fa-xl" style="margin-left: 5px;"></i>
                                                         {{$customer_name}}
                                                     </a>
                                                 <?php
                                                 }
                                                 ?>
-                                                </a>
-                                                
-                                                <div class="header_navbar_accessory" style="margin-top: -15px; width: 175px;">
-                                                    <div class="header_accessory-item-group">
-                                                        <ul class="header_accessory_list">
-                                                            <li class="header_accessory_item">
-                                                                <a href="{{URL::to('/vieworder-customer/'.$customer_name)}}" class="header_accessory_link"><i class="fa-sharp fa-solid fa-file-invoice"></i> Đơn mua</a>
-                                                            </li>
-                                                            <li class="header_accessory_item">
-                                                                <a href="{{ URL::to('/logout-checkout') }}" class="header_accessory_link"><i class="fa-solid fa-right-from-bracket"></i> Đăng xuất</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
+                                            </a>
+
+                                            <div class="header_navbar_accessory" style="margin-top: -15px; width: 175px;">
+                                                <div class="header_accessory-item-group">
+                                                    <ul class="header_accessory_list">
+                                                        <li class="header_accessory_item">
+                                                            <a href="{{URL::to('/vieworder-customer/'.$customer_name)}}" class="header_accessory_link"><i class="fa-sharp fa-solid fa-file-invoice"></i> Đơn mua</a>
+                                                        </li>
+                                                        <li class="header_accessory_item">
+                                                            <a href="{{ URL::to('/logout-checkout') }}" class="header_accessory_link"><i class="fa-solid fa-right-from-bracket"></i> Đăng xuất</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </li>
+                                    </div>
+
+                                    <!-- customer on mobile -->
+                                    <div class="customer_mobile">
+
+                                        <li class="header_navbar_acctive" style="list-style-type: none;">
+                                            <a href="#" class="header_navbar_link">
+                                                <?php
+                                                $customer_name = Session::get('customer_name');
+                                                if ($customer_name != null) {
+                                                ?>
+                                                    <a href="" class="header_cart-history" id="customer_name">
+                                                        <i class="fa-solid fa-circle-user fa-xl" style="color: #32e2b6"></i>
+
+                                                    </a>
+                                                <?php
+                                                }
+                                                ?>
+                                            </a>
+
+                                            <div class="header_navbar_accessory">
+                                                <div class="header_accessory-item-group">
+                                                    <ul class="header_accessory_list">
+                                                        <li class="header_accessory_item">
+                                                            <a href="" class="header_accessory_link">{{$customer_name}}</a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
 
                                             </div>
                                         </li>
 
 
-
-
                                     </div>
 
-                                    <label onclick="show_tab_on_mobile()" for="check_menu_list_on_mobile" class="menu_list_on_mobile" id="menu_list_on_mobile">
+                                    <!--  -->
+
+                                    <!-- logout mobile -->
+                                    <div class="logout_mobile" style="margin-left: -4px;">
+                                        <?php
+                                        $customer_name = Session::get('customer_name');
+                                        if ($customer_name != null) {
+                                        ?>
+                                            <a href="{{ URL::to('/logout-checkout') }}" class="header_cart" id="header_cart">
+                                                <span class="number"><i class="fa-solid fa-right-from-bracket"></i></span>
+                                                <div class="header_cart-overlay"></div>
+                                            </a>
+                                        <?php
+                                        }
+                                        ?>
+                                    </div>
+                                    <!--  -->
+
+                                    <!-- <label onclick="show_tab_on_mobile()" for="check_menu_list_on_mobile" class="menu_list_on_mobile" id="menu_list_on_mobile">
                                         <i class="fas fa-bars"></i>
                                         <Span>Menu</Span>
                                     </label>
-                                    <input type="checkbox" hidden id="check_menu_list_on_mobile" class="check_menu_list_on_mobile">
+                                    <input type="checkbox" hidden id="check_menu_list_on_mobile" class="check_menu_list_on_mobile"> -->
 
                                 </div>
 
@@ -225,8 +665,6 @@
             <!-- start-navbar-bottom----------------->
             <div class="hidden_on_mobile header_navbar_bottom grid wide">
                 <ul class="header_navbar_list">
-
-
                     @foreach($category as $key => $cate)
 
                     @php
@@ -281,23 +719,89 @@
                         </div>
                     </li>
 
-
-
-
-
-
-
+                    
                 </ul>
             </div>
+
+            <!-- cate mobile-->
+            <div class="cate_mobile header_navbar_bottom grid wide" style="margin-left: 4px;">
+                <ul class="header_navbar_list">
+
+                    @foreach($category as $key => $cate)
+
+                    @php
+                    $fontawe;
+                    if($cate->category_id == 12){
+                    $fontawe = 'fa-solid fa-mobile-screen fa-xl';
+                    }elseif($cate->category_id == 13){
+                    $fontawe = 'fa-solid fa-headphones fa-xl';
+
+                    }elseif($cate->category_id == 14){
+                    $fontawe = 'fa-solid fa-battery-full fa-xl';
+
+                    }elseif($cate->category_id == 15){
+                    $fontawe = 'fa-solid fa-mobile-screen fa-xl';
+                    }
+                    @endphp
+
+                    <li class="header_navbar_item">
+                        <span>
+                            <i class="{{$fontawe}}"></i>
+                            <!-- <i class="fa-solid fa-mobile-screen fa-2xl"></i> -->
+                        </span>
+                        <br>
+                        <a href="{{URL::to('/danh-muc-san-pham/'.$cate->category_id)}}" class="header_navbar_link" id="title_cate"> {{($cate->category_name)}}</a>
+                    </li>
+
+                    @endforeach
+
+                    <!-- <li class="header_navbar_item">
+                            <span>
+                                <i class="fa-solid fa-newspaper fa-xl"></i>
+                            </span>
+                            <a href="#" class="header_navbar_link">Tin tức</a>
+                            
+                    </li>    -->
+
+                    <li class="header_navbar_item header_navbar_acctive">
+                        <a href="#" class="header_navbar_link"><i class="fa-regular fa-newspaper fa-2xl" style="margin-right: 3px"></i>
+                            <br>
+                            <span>Tin tức</span>
+                            <i class="fas fa-caret-down"></i></a>
+                        <div class="header_navbar_accessory list_news_mobile" style="
+    margin-left: 0px;
+    max-width: 110px;
+    margin-top: 40px;
+">
+                            <div class="header_accessory-item-group">
+                                <ul class="header_accessory_list">
+                                    <li class="header_accessory_item">
+                                        <a href="{{URL::to('/tintuc-sanphammoi')}}" class="header_accessory_link" style="font-size: 1rem;">Sản phẩm mới</a>
+                                    </li>
+                                    <li class="header_accessory_item">
+                                        <a href="{{URL::to('/tintuc-congnghe')}}" class="header_accessory_link" style="font-size: 1rem;">Công nghệ</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+
             <!-- end navbar bottom--------------- -->
         </div>
+
 
         <!-- end--header-- -->
         <div class="content">
             <div class="grid wide">
                 <!-- start-bar-top-- -->
                 <div class="bartop bartop_checkout">
-                    <div class="row">
+                    <div class="row bartop_mobile">
                         <div class="col l-8 c-12" style="margin-top: 20px;background-color: yellow;border-radius: 20px;height: 380px;">
                             <div id="carousel_bartop" class="carousel slide carousel_bartop" data-ride="carousel">
                                 <ul class="carousel-indicators ul_carousel_bartop">
@@ -433,7 +937,7 @@
                 <p>
                     Địa chỉ: 99 An Dương Vương, p16 q8 Hồ Chí Minh. Điện thoại: 028 38125960. Email:
                     hquan20020915@gmail.com
-                    . Chịu trách nhiệm nội dung: Nguyễn Văn Tèo. </p>
+                    . Chịu trách nhiệm nội dung: Nguyễn Hoàng Quân. </p>
             </div>
         </footer>
     </div>
