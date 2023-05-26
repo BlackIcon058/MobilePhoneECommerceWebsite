@@ -47,20 +47,22 @@ Run on Xampp
 <img width="960" alt="xemdonhang" src="https://github.com/BlackIcon058/MobilePhoneECommerceWebsite/assets/107245089/fe6bb8fd-f866-4380-b1b3-9df2d399fe95">
     
 -Admin
-    
-<img width="960" alt="admin" src="https://github.com/BlackIcon058/MobilePhoneECommerceWebsite/assets/107245089/c7bdf1c0-9ff3-488d-9291-1c3ed621f5df">
 
-<img width="960" alt="dashboard" src="https://github.com/BlackIcon058/MobilePhoneECommerceWebsite/assets/107245089/ae5122b7-9a0f-4d99-9508-69cad67421ec">
+<img width="960" alt="admin" src="https://github.com/BlackIcon058/MobilePhoneECommerceWebsite/assets/107245089/08587745-aa70-460e-a66d-468ccc976411">
 
-<img width="960" alt="manage product" src="https://github.com/BlackIcon058/MobilePhoneECommerceWebsite/assets/107245089/5a12f881-9a28-41bd-af1a-ac3d7f9e255b">
+<img width="960" alt="dashboard" src="https://github.com/BlackIcon058/MobilePhoneECommerceWebsite/assets/107245089/ba67f959-aafd-41b5-a000-998b0999ee63">
     
-<img width="960" alt="order" src="https://github.com/BlackIcon058/MobilePhoneECommerceWebsite/assets/107245089/aa5f566f-d22d-4cc3-a6a7-f66d8c122eb2">
+<img width="960" alt="manage product" src="https://github.com/BlackIcon058/MobilePhoneECommerceWebsite/assets/107245089/fcc5c445-1851-4218-ba9c-4c5ce41779ec">
     
-<img width="960" alt="customer" src="https://github.com/BlackIcon058/MobilePhoneECommerceWebsite/assets/107245089/c6351b89-77ee-4528-b67c-def644bd214a">
+<img width="960" alt="customer" src="https://github.com/BlackIcon058/MobilePhoneECommerceWebsite/assets/107245089/69267be2-9263-4e3e-974c-9caae41a2511">
     
-<img width="960" alt="user" src="https://github.com/BlackIcon058/MobilePhoneECommerceWebsite/assets/107245089/8bd0c79e-39b2-43cd-8860-1d9d91241646">
-
-<img width="960" alt="report" src="https://github.com/BlackIcon058/MobilePhoneECommerceWebsite/assets/107245089/f001895d-843e-4f7d-af8b-3e75934b7103">
+<img width="960" alt="user" src="https://github.com/BlackIcon058/MobilePhoneECommerceWebsite/assets/107245089/c5741292-e96e-4fac-a37e-86a17ce5f098">
+    
+<img width="960" alt="order" src="https://github.com/BlackIcon058/MobilePhoneECommerceWebsite/assets/107245089/556c875c-31dc-4823-a185-6ff11b04f135">
+    
+<img width="960" alt="details order" src="https://github.com/BlackIcon058/MobilePhoneECommerceWebsite/assets/107245089/b4064994-c379-4d46-8b39-7652f4f204a7">
+    
+<img width="960" alt="report" src="https://github.com/BlackIcon058/MobilePhoneECommerceWebsite/assets/107245089/fee51097-e456-49e8-bd77-2a3c78b88f20">
 
 </p>
 
