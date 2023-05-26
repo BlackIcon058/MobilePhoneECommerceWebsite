@@ -25,7 +25,7 @@ Run on Xampp
 
 - [1] Gitbash: git clone https://github.com/BlackIcon058/MobilePhoneECommerceWebsite.git
 - [2] Move folder in htdocs
-- [3] Add DB file on http://localhost/phpmyadmin/ with name: elaravel
+- [3] Add DB file (DBMobileShop.sql) on http://localhost/phpmyadmin/ with name: elaravel
 - [4] run http://localhost/MobilePhoneECommerceWebsite/
 
 ## Authors
