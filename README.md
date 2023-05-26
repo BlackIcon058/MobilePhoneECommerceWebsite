@@ -23,7 +23,7 @@ Link website admin: http://quanhoangmobileshop.infinityfreeapp.com/admin
 ### Installing
 Run on Xampp
 
-- [1] git clone 
+- [1] Gitbash: git clone https://github.com/BlackIcon058/MobilePhoneECommerceWebsite.git
 - [2] Add DB file
 
 ## Authors
