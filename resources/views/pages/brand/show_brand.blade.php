@@ -22,11 +22,7 @@
                         ?>
                         
                         @foreach($brand_name as $key => $name)
-                                <?php
-                                        if($new_varriable == 12){
-                                                $name->brand_name = 'Apple';
-                                        }
-                                ?>
+                                
                         <h1>THƯƠNG HIỆU SẢN PHẨM: {{($name->brand_name)}}</h1>
                         
                         @endforeach
