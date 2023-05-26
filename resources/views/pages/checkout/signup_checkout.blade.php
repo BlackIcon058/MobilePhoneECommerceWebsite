@@ -144,13 +144,17 @@ body.my-login-page {
 								</div>
 
 								<div class="form-group">
-									<button type="submit" class="btn btn-primary btn-block">
+									<button type="submit" class="btn btn-primary btn-block" style="margin-left: 0;">
 										Đăng ký
 									</button>
 								</div>
 
-								<div class="mt-4 text-center">
+								<div class="mt-4 text-center signup">
 									Bạn đã có tài khoản? <a href="{{ URL::to('/login-checkout') }}">Đăng nhập</a>
+								</div>
+
+								<div class="mt-4 text-center signup_mobile">
+									Đã có tài khoản? <a href="{{ URL::to('/login-checkout') }}">Đăng nhập</a>
 								</div>
 							</form>
 						</div>
