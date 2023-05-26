@@ -23,7 +23,7 @@ Link website admin: http://quanhoangmobileshop.infinityfreeapp.com/admin
 ### Installing
 Run on Xampp
 
-- [1] (https://www.example.com)
+- [1] git clone 
 - [2] Add DB file
 
 ## Authors
