@@ -21,7 +21,9 @@
 			<div class="row justify-content-md-center h-100">
 				<div class="card-wrapper">
 					<div class="brand">
-						<img src="{{('public/frontend/assets/images/person.png')}}" alt="logo">
+						<img class="img_login" src="{{('public/frontend/assets/images/person.png')}}" alt="logo">
+						<img class="img_login_mobile" src="{{('public/frontend/assets/images/person.png')}}" alt="logo" width="70%">
+
 					</div>
 					<div class="card fat">
 						<div class="card-body">
@@ -38,7 +40,7 @@
 
 								<div class="form-group">
 									<label for="password">Mật khẩu
-										<a href="forgot.html" class="float-right">
+										<a href="" class="float-right">
 											Quên mật khẩu?
 										</a>
 									</label>
@@ -56,12 +58,16 @@
 								</div>
 
 								<div class="form-group">
-									<button type="submit" class="btn btn-primary btn-block">
+									<button type="submit" class="btn btn-primary btn-block" style="margin-left: 0;">
 										Đăng nhập
 									</button>
 								</div>
-								<div class="mt-4 text-center">
+								<div class="mt-4 text-center signup">
 									Chưa có tài khoản? <a href="{{ URL::to('/signup-checkout') }}">Đăng ký tài khoản!</a>
+								</div>
+
+								<div class="mt-4 text-center signup_mobile">
+									Chưa có tài khoản? <a href="{{ URL::to('/signup-checkout') }}">Đăng ký!</a>
 								</div>
 							</form>
 						</div>
@@ -70,6 +76,8 @@
 						
 					</div>
 				</div>
+
+				
 			</div>
 		</div>
 	</section>
