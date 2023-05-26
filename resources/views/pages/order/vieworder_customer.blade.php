@@ -166,7 +166,8 @@
 </head>
 
 <body>
-<div class="container">
+
+<div class="container order">
     <div class="row">
     </div>
     <div class="container-xl order_customer">
@@ -210,9 +211,9 @@
                             <tr>
                                 <th>Mã hóa đơn</th>
                                 <!-- <th>Tổng giá tiền</th> -->
-                                <th>Đang vận chuyển</th>
-                                <th>Hoàn thành</th>
-                                <th>Đã hủy</th>
+                                <th>Tình trạng</th>
+                                <!-- <th>Hoàn thành</th>
+                                <th>Đã hủy</th> -->
                                 <!-- <th>Tình trạng đơn hàng</th> -->
                                 <th>Ngày đặt hàng</th>
                                 <th>Xem đơn</th>
@@ -223,22 +224,19 @@
                             @foreach($manage_order as $key => $ord)
                             <tr>
                                 <td>{{$ord-> order_code}}</td>
-                                <td>
-                                    <input type="checkbox" name="vanchuyen" <?php if ($ord->order_status == 1) echo "checked"; ?>>
+                                
+                                <td >
+                                    <?php if ($ord->order_status == 1) echo "Đang vận chuyển"; else if ($ord->order_status == 2) echo 'Giao hàng thành công'; else echo 'Đơn hàng bị hủy';?>
                                 </td>
-                                <td>
-                                    <input type="checkbox" name="hoanthanh" <?php if ($ord->order_status == 2) echo "checked"; ?>>
-                                </td>
-                                <td>
-                                    <input type="checkbox" name="dahuy" <?php if ($ord->order_status == 3) echo "checked"; ?>>
-                                </td>
+                                
+                                
 
 
                                 <td>{{ $ord-> created_at}}</td>
 
                                 <td>
 
-                                    <a href="{{URL::to('/viewdetails-order-customer/'.$ord->order_code)}}" class="edit" title="View" data-toggle="tooltip"><i class="fa-solid fa-eye"></i></a>
+                                    <a href="{{URL::to('/viewdetails-order-customer/'.$ord->order_code)}}" class="edit" title="View" data-toggle="tooltip"><i class="fa-regular fa-file-lines" style="color: red;"></i></a>
 
                                 </td>
                             </tr>
@@ -248,10 +246,101 @@
                         </tbody>
                     </table>
                     <div class="clearfix">
-                        <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
+                        <div class="hint-text"><b>1</b> trên tổng <b>1</b> trang</div>
                         <ul class="pagination">
                             <li class="page-item disabled"><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
-                            <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                            <li class="page-item active"><a href="#" class="page-link" style="z-index: 3;color: rgb(255, 255, 255);background-color: red;border-color: red;">1</a></li>
+                            <li class="page-item"><a href="#" class="page-link">2</a></li>
+                            <li class="page-item"><a href="#" class="page-link">3</a></li>
+                            <li class="page-item"><a href="#" class="page-link">4</a></li>
+                            <li class="page-item"><a href="#" class="page-link">5</a></li>
+                            <li class="page-item"><a href="#" class="page-link"><i class="fa fa-angle-double-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+
+<!-- order mobile -->
+<div class="container order_on_mobile" style="width: 375px;">
+    <div class="row">
+    </div>
+    <div class="container-xl order_customer" style="padding-bottom: 0px"> 
+        <div class="table-responsive" style="overflow-x: hidden;">
+            <div class="table-wrapper">
+                <div class="table-title">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h2 style="font-size: 12px; margin-left: -10px">ĐƠN MUA HÀNG</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 text-left">
+                            <h7 class="tm-block-title d-inline-block" style="color: red;">
+                                <?php
+                                $message = Session::get('message');
+                                if ($message) {
+                                    echo $message;
+                                    Session::put('message', null);
+                                }
+                                ?>
+                            </h7>
+                        </div>
+                    </div>
+
+                    <table class="table table-hover table-bordered" style=" margin-left: 10px;border: 1px solid #dee2e6; font-size: 13px; width: 375px">
+                        <thead>
+                            <tr>
+                                <th style="width: 10%" title="Mã hóa đơn"><i class="fa-regular fa-file-alt"></i>
+                                Hóa đơn</th>
+                                <!-- <th>Tổng giá tiền</th> -->
+                                <th style="width: 20%;" title="Đang vận chuyển"><i class="fa-solid fa-truck-fast"></i>Tình trạng</th>
+                                <!-- <th style="width: 0%" title="Đã hoàn thành"><i class="fa-solid fa-check"></i></th> -->
+                                <!-- <th style="width: 0%" title="Đã hủy"><i class="fa-solid fa-times-circle"></i></th> -->
+                                <!-- <th>Tình trạng đơn hàng</th> -->
+                                <!-- <th style="width: 2%; " title="Ngày đặt hàng"><i class="fa-solid fa-calendar-days"></i></th> -->
+                                <!-- <th style="width: 5%">Xem đơn</th> -->
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach($manage_order as $key => $ord)
+                            <tr>
+                                <td style="">
+                                    {{$ord-> order_code}}
+                                    <br>
+                                    <span>{{ $ord-> created_at}}</span>
+                                    <br>
+                                    <span>
+                                    <a href="{{URL::to('/viewdetails-order-customer/'.$ord->order_code)}}" class="edit" title="View" style="color: black; margin-left: -0.1px" ><i class="fa-regular fa-file-lines" style="color: red;"></i> <span style="margin-right: 3px"></span> Xem đơn hàng</a>
+                                    </span>
+                                    
+                                </td>
+                                <td style="">
+                                    <?php if ($ord->order_status == 1) echo "Đang vận chuyển"; else if ($ord->order_status == 2) echo 'Giao hàng thành công'; else echo 'Đơn hàng bị hủy';?>
+                                </td>
+                                
+                                <!-- <td >{{ $ord-> created_at}}</td> -->
+
+                                <!-- <td >
+
+                                    <a href="{{URL::to('/viewdetails-order-customer/'.$ord->order_code)}}" class="edit" title="View" data-toggle="tooltip"><i class="fa-solid fa-eye"></i></a>
+
+                                </td> -->
+                            </tr>
+                            @endforeach
+
+
+                        </tbody>
+                    </table>
+                    <div class="clearfix" style="width: 290px">
+                        <div class="hint-text" style="font-size: 14px; margin-left: 125px"> <b>1</b> trên tổng <b>1</b> trang</div>
+                        <ul class="pagination">
+                            <li class="page-item disabled"><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
+                            <li class="page-item active"><a href="#" class="page-link" style="z-index: 3;color: rgb(255, 255, 255);background-color: red;border-color: red;">1</a></li>
                             <li class="page-item"><a href="#" class="page-link">2</a></li>
                             <li class="page-item "><a href="#" class="page-link">3</a></li>
                             <li class="page-item"><a href="#" class="page-link">4</a></li>
@@ -263,7 +352,9 @@
             </div>
         </div>
 </div>
-    
+</div>
+
+<!--  -->
 </body>
 
 </html>
