@@ -24,7 +24,9 @@ Link website admin: http://quanhoangmobileshop.infinityfreeapp.com/admin
 Run on Xampp
 
 - [1] Gitbash: git clone https://github.com/BlackIcon058/MobilePhoneECommerceWebsite.git
-- [2] Add DB file
+- [2] Move folder in htdocs
+- [3] Add DB file on [localhost](http://localhost/phpmyadmin/) with name: elaravel
+- [4] run http://localhost/MobilePhoneECommerceWebsite/
 
 ## Authors
   - **Nguyen Hoang Quan** 
